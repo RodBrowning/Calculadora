@@ -1,0 +1,80 @@
+.externo{
+    position: relative;
+    margin: auto;
+    background-color: green;
+    width: 50%;
+}
+
+.main{
+    
+    border: 4px solid black;
+    text-align: center;
+    padding: 10px;
+    background-color: #d3f9b3;
+    position: absolute;
+
+    
+}
+
+#buttC{
+   position: relative;
+   
+   float: left;
+   
+}
+
+#formula{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #77ce2d;
+    font-weight: bold;
+    text-align: right;
+    font-size: 40px;
+}
+.botoes{
+    width: 75%;
+    
+    float: left;
+}
+.buttons{
+    position: relative;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 10px;
+    background-color: #2fa86c;
+    color: white;
+    
+    
+}
+
+.operadores{
+
+    position: relative;
+    width: 20%;
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+.operadores > .buttons{
+
+    width: 100%;
+    background-color: #218733;
+ 
+}
+
+.buttons:hover{
+    background-color: #53efa4;
+}
+.buttons:active{
+    background-color: #8cd1af;
+}
+
+@media screen and (max-width: 500px){
+    .buttons{
+        width: 30%;
+    }
+    .botoes{
+        width: 75%;
+    }
+}
