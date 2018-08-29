@@ -2,7 +2,8 @@
     position: relative;
     margin: auto;
     background-color: green;
-    width: 50%;
+    width: 50%;    
+    margin-top: 40px;
 }
 
 .main{
@@ -32,6 +33,11 @@
     text-align: right;
     font-size: 40px;
 }
+
+button:focus{
+    outline: none;
+}
+
 .botoes{
     width: 75%;
     
@@ -44,7 +50,6 @@
     margin-bottom: 10px;
     background-color: #2fa86c;
     color: white;
-    
     
 }
 
@@ -70,11 +75,25 @@
     background-color: #8cd1af;
 }
 
-@media screen and (max-width: 500px){
-    .buttons{
-        width: 30%;
+@media only screen and (max-width: 500px){
+
+    .externo {     
+        width: 70%;
+        margin-top: 60px;
     }
-    .botoes{
-        width: 75%;
+    
+}
+
+@media only screen and (min-width: 501px){
+
+    .buttons {
+        width: 28%;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .externo {     
+        width: 80%;
     }
 }
