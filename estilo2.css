@@ -55,6 +55,11 @@ button{
 	font-size: 1.4em;
 	
 }
+button:active{
+	color: #221f2d;
+	background-color: #d4514f;	
+}
+
 
 button:focus{
 	outline: 1px solid greenyellow;
@@ -129,6 +134,11 @@ h1::after {
 .operadores > button{
 	background-color: #d4514f;
 	color: #221f2d;
+}
+
+.operadores > button:active{
+	color: #d4514f;
+	background-color: #221f2d;
 }
 
 @media screen and (max-width: 767px){
