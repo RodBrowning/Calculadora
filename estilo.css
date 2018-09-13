@@ -2,8 +2,8 @@
     position: relative;
     margin: auto;
     background-color: green;
-    width: 50%;    
-    margin-top: 40px;
+    width: 50%;
+    margin-top: 20px;
 }
 
 .main{
@@ -73,6 +73,19 @@ button:focus{
 }
 .buttons:active{
     background-color: #8cd1af;
+}
+
+.novoLayout{
+    display: flex;
+    margin: auto;
+    height: 35px;
+    background-color: #2fa86c;
+    
+}
+.novoLayout a{
+    text-decoration: none;
+    color: white;
+
 }
 
 @media only screen and (max-width: 500px){

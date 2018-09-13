@@ -7,12 +7,14 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">        
     </head>
      <body>
+        <button class="novoLayout"><a href="https://rodbrowning.github.io/Calculadora/index2.html">Novo Layout</a></button>
         <div class="externo">
+
             <div class="main">    
                
                     <h1>Calculator</h1>
                     
-                    <input id="formula" type="text"></input>
+                    <input id="formula" type="text">
                     <button class="buttons" value= 0 id="buttC" onclick="limpar(value);">C</button>
                 <div class="botoes">
                     
@@ -39,8 +41,9 @@
                     <button class="buttons" id="butt/" value= / onclick="insert(value);">/</button>
                     <button class="buttons" id="butt*" value= * onclick="insert(value);">*</button>
                     
-                </div>
+                </div>                
             </div>
+
         </div>   
             
     <script type="text/javascript">
@@ -50,13 +53,11 @@
             var add = document.getElementById('formula').value;
             document.getElementById('formula').value = add + num;
         }
-
         function limpar(num){
             
             
             document.getElementById('formula').value = "";
         }
-
         function calculo(){
             var formula = document.getElementById('formula').value;
             resultado = eval(formula);
