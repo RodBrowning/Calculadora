@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	box-shadow: inset 0px 0px 200px 45px black;
+	height:  100vh;
+	background: url('https://previews.123rf.com/images/belchonoksun/belchonoksun1510/belchonoksun151000048/46275084-math-vector-seamless-pattern-with-geometrical-figures-formulas-and-calculations-endless-texture-you-.jpg');
+	background-repeat:  no-repeat;
+	background-size:  cover;
+	background-color: #39334e;
+	background-blend-mode: soft-light;
+}
+
+.externo{
+	position: relative;
+	top: 15vh;
+}
+.main{
+	margin-top: 20px;
+	width: 40%;
+	height: 65vh;
+	margin:auto;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	background-color: #221f2d;
+	border-radius:  8px;
+	box-shadow: 0px 0px 77px 20px black;
+}
+
+
+
+input{
+	height: 1.5em;
+	border: 0px;
+	background-color: transparent;
+	color: greenyellow;
+	text-align: right;
+	padding: 0 10px;
+	font-size: 2em;
+}
+
+input:focus{
+	outline: 1px solid greenyellow;
+	outline-style: outset;
+	outline-offset: -2px;
+}
+
+button{
+	color: #d4514f;
+	background-color: #221f2d;
+	border: 1px solid #b14545;
+	font-weight: 900;
+	font-size: 1.4em;
+	
+}
+
+button:focus{
+	outline: 1px solid greenyellow;
+	outline-offset: -2px;
+}
+
+.h1{
+	position: relative;
+	grid-column: 2 / 8;
+	color: #d4514f;
+	margin: 10px 0;
+}
+h1{
+	text-align: center;
+    letter-spacing: .2em;
+    font-size: 2em;    
+	margin: 10px 0;
+}
+
+h1::before {
+    content: ' ';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 50%;
+    height: 75%;
+    border-top: 5px solid #964e4e;
+    border-left: 5px solid #39344c;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+h1::after {
+    content: ' ';
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 75%;
+    height: 50%;
+    border-bottom: 5px solid #964e4e;
+    border-right: 5px solid #39344c;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+#formula, #buttC, #buttIgual{
+	grid-column: 1 / -1;
+}
+#buttIgual{
+	margin-bottom:  0;
+	border-radius: 0 0 8px 8px;
+}
+
+#butt0{
+	grid-column: span 2;
+}
+
+.botoes{
+	grid-column: 1 /7;
+	grid-row: 4 / 7;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.operadores{
+	grid-column: 7 / -1 ;
+	grid-row: 4 / 7;
+	display: grid;
+
+}
+
+.operadores > button{
+	background-color: #d4514f;
+	color: #221f2d;
+}
+
+@media screen and (max-width: 767px){
+	.main{
+		width: 70%;
+	}
+
+}
+
+
+@media screen and (max-width: 425px){
+	.main{
+		width: 80%;
+	}
+}
+
+
+@media screen and (max-width: 320px){
+	.main{
+		width: 90%;
+	}
+}

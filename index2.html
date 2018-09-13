@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="estilo2.css">        
+    </head>
+     <body>
+        <div class="externo">
+            <div class="main">    
+               <div class="h1">
+                    <h1>Calculator</h1>
+                </div>    
+                    <input id="formula" type="text"></input>
+                    <button class="buttons" value= 0 id="buttC" onclick="limpar(value);">C</button>
+                <div class="botoes">
+                    
+                    <button class="buttons" id="butt7" value= 7 onclick="insert(value);">7</button>
+                    <button class="buttons" id="butt8" value= 8 onclick="insert(value);">8</button>
+                    <button class="buttons" id="butt9" value= 9 onclick="insert(value);">9</button>
+                    
+                   
+                    <button class="buttons" id="butt4" value= 4 onclick="insert(value);">4</button>
+                    <button class="buttons" id="butt5" value= 5 onclick="insert(value);">5</button>
+                    <button class="buttons" id="butt6" value= 6 onclick="insert(value);">6</button>
+                 
+                    <button class="buttons" id="butt1" value= 1 onclick="insert(value);">1</button>
+                    <button class="buttons" id="butt2" value= 2 onclick="insert(value);">2</button>
+                    <button class="buttons" id="butt3" value= 3 onclick="insert(value);">3</button>
+                    
+                    <button class="buttons" id="butt0" value= 0 onclick="insert(value);">0</button>
+                    <button class="buttons" id="butt." value= . onclick="insert(value);">.</button>
+                </div>
+                <div class="operadores">
+                    <button class="buttons" id="butt+" value= + onclick="insert(value);">+</button>
+                    <button class="buttons" id="butt-" value= - onclick="insert(value);">-</button>
+                    <button class="buttons" id="butt/" value= / onclick="insert(value);">/</button>
+                    <button class="buttons" id="butt*" value= * onclick="insert(value);">*</button>
+                </div>
+                    <button class="buttons" id="buttIgual" value= = onclick="calculo();">=</button>
+                    
+                
+            </div>
+        </div>   
+            
+    <script type="text/javascript">
+        
+        function insert(num){
+            
+            var add = document.getElementById('formula').value;
+            document.getElementById('formula').value = add + num;
+        }
+
+        function limpar(num){
+            
+            
+            document.getElementById('formula').value = "";
+        }
+
+        function calculo(){
+            var formula = document.getElementById('formula').value;
+            resultado = eval(formula);
+            document.getElementById('formula').value = resultado;
+        }
+    </script>
+        
+    </body>
+</html>
